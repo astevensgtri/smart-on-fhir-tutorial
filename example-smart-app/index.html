@@ -32,6 +32,11 @@
     .styled-table tbody tr:last-of-type {
       border-bottom: 2px solid #009879;
     }
+
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
 </style>
   <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
@@ -48,11 +53,13 @@
       <div class="bounce2"></div>
       <div class="bounce3"></div>
     </div>
-    <div id='holder' >
+    <div id='holder' class="content">
       <h2>Andy's First Smart App!</h2>
 
-      <h2>Patient Resource</h2>
       <table class="styled-table">
+        <thead>
+            <th> Patient Resource</th>
+        </thead>
         <tbody>
           <tr>
             <th>First Name:</th>
@@ -73,8 +80,10 @@
         </tbody>
       </table>
 
-      <h2> Observation Resource</h2>
       <table class="styled-table">
+        <thead>
+            <th> Observation Resource</th>
+        </thead>
         <tbody>
           <tr>
             <th>Height:</th>
@@ -103,8 +112,11 @@
         </tbody>
       </table>
 
-      <h2>Condition Resource</h2>
+
       <table class="styled-table">
+        <thead>
+            <th> Condition Resource</th>
+        </thead>
         <thead>
           <tr>
             <th>Condition</th>
