@@ -22,6 +22,11 @@
                       }
                     }
                   });
+        var cond = smart.patient.api.fetchAll({
+                    type: 'Condition',
+                    category: 'problem',
+                    clinicalstatus: 'active'
+                  });
 
         $.when(pt, obv).fail(onError);
 
