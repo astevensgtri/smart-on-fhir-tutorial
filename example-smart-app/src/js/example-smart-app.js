@@ -23,9 +23,7 @@
                     }
                   });
         var cond = smart.patient.api.fetchAll({
-                    type: 'Condition',
-                    category: 'problem',
-                    clinicalstatus: 'active'
+                    type: 'Condition'
                   });
 
         $.when(pt, obv).fail(onError);
@@ -67,6 +65,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.hr = getQuantityValueAndUnit(hr[0]);
+          p.cond = cond;
 
           ret.resolve(p);
         });
